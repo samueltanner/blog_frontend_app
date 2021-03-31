@@ -1,6 +1,7 @@
 <template>
-  <div class="home">
-    <h1>{{ message }}</h1>
+  <div class="test">
+    <h1>Welcome to the Test Page</h1>
+    <h3>{{ message }}</h3>
   </div>
 </template>
 
@@ -10,7 +11,7 @@
 export default {
   data: function () {
     return {
-      message: "Welcome to Vue.js!",
+      message: "This is a test!",
     };
   },
   created: function () {},
