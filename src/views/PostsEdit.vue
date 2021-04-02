@@ -1,7 +1,7 @@
 <template>
   <div class="container post-edit">
     <form v-on:submit.prevent="updatePost(post)">
-      <h1>Create Post</h1>
+      <h1>Edit Post</h1>
       <ul>
         <li class="text-danger" v-for="error in errors" v-bind:key="error">
           {{ error }}

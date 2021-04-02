@@ -10,6 +10,9 @@
       <div class="form-group">
         <label>Name:</label>
         <input type="text" class="form-control" v-model="name" />
+        <small v-if="name.length > 0 && name.length" class="text-danger">
+          {{ 20 - name.length }} Characters Remaining
+        </small>
       </div>
       <div class="form-group">
         <label>Email:</label>

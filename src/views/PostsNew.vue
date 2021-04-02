@@ -14,6 +14,8 @@
       <div class="form-group">
         <label>Body:</label>
         <input type="text" class="form-control" v-model="body" />
+        <small>{{ 100 - body.length }} Characters Remaining</small>
+        <small v-if="body.length > 80" class="text-danger">running out</small>
       </div>
       <div class="form-group">
         <label>Image URL:</label>
